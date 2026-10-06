@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pranav Ethapay — Full Stack Developer</title>
+<meta name="description" content="Portfolio of Pranav Ethapay, second-year CSE student, full stack developer and AI enthusiast." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+  <a href="#home" class="nav-logo">PE<span class="dot">.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="nav-link active">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#education" class="nav-link">Education</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+      <i class="fa-solid fa-sun sun-icon"></i>
+      <i class="fa-solid fa-moon moon-icon"></i>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-bg">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-left reveal">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> second year · CSE · bengaluru</div>
+      <h1 class="hero-title">Hey, I'm <span class="grad-text">Pranav Ethapay</span></h1>
+      <div class="hero-role">
+        <span>I build </span><span class="typed" id="typed"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">Second-year B.Tech Computer Science & Engineering student who loves shipping real projects — from event platforms to graphics engines — while exploring full-stack engineering and AI.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/pranave2007" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/pranav-ethapay-66031b3a1/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-right reveal">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+          <span class="terminal-title">pranav@cse-dev: ~</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <p><span class="prompt">$</span> whoami</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</header>
+
+<main>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <span class="section-eyebrow reveal">01 · About</span>
+  <h2 class="section-title reveal">The short version</h2>
+
+  <div class="about-grid">
+    <div class="about-card glass reveal">
+      <p>I'm a second-year B.Tech student in Computer Science & Engineering with a strong pull toward software development, web engineering, AI, and problem solving. I like building things that actually work — websites, desktop apps, academic projects — and I keep my GitHub active because I learn best by shipping.</p>
+      <p>Outside of coursework, I'm continuously honing my software craftsmanship, aiming to build thoughtful applications with robust backends and clean user interfaces.</p>
+      <div class="about-chips">
+        <span class="chip"><i class="fa-solid fa-code"></i> Full Stack</span>
+        <span class="chip"><i class="fa-solid fa-robot"></i> AI Enthusiast</span>
+        <span class="chip"><i class="fa-solid fa-bug"></i> Problem Solver</span>
+      </div>
+    </div>
+
+    <div class="objective-card glass reveal">
+      <h3><i class="fa-solid fa-crosshairs"></i> Career Objective</h3>
+      <p>To become a skilled Software Engineer by continuously learning modern technologies, building impactful software solutions, and contributing to innovative products while expanding my knowledge in AI and Full Stack Development.</p>
+    </div>
+  </div>
+
+  <div class="strengths reveal">
+    <span class="strength-tag">Problem Solving</span>
+    <span class="strength-tag">Logical Thinking</span>
+    <span class="strength-tag">Quick Learner</span>
+    <span class="strength-tag">Team Collaboration</span>
+    <span class="strength-tag">Adaptability</span>
+    <span class="strength-tag">Continuous Learning</span>
+    <span class="strength-tag">Clean Code Practices</span>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <span class="section-eyebrow reveal">02 · Education</span>
+  <h2 class="section-title reveal">Where I've been</h2>
+
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass">
+        <span class="timeline-tag current">Currently Pursuing</span>
+        <h3>B.Tech in Computer Science & Engineering</h3>
+        <p>Building a foundation across data structures, OOP, databases, and web development while working on real-world projects alongside coursework.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content glass">
+        <span class="timeline-tag">Completed</span>
+        <h3>Class 12 — CBSE</h3>
+        <p>Built the base for logical thinking and problem solving that led straight into engineering.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <span class="section-eyebrow reveal">03 · Skills</span>
+  <h2 class="section-title reveal">What I work with</h2>
+
+  <div class="skills-grid">
+    <div class="skill-block glass reveal">
+      <h3><i class="fa-solid fa-terminal"></i> Programming Languages</h3>
+      <div class="bar-row"><span>C</span><div class="bar"><div class="bar-fill" data-level="75"></div></div></div>
+      <div class="bar-row"><span>Python</span><div class="bar"><div class="bar-fill" data-level="85"></div></div></div>
+      <div class="bar-row"><span>Java</span><div class="bar"><div class="bar-fill" data-level="70"></div></div></div>
+      <div class="bar-row"><span>SQL</span><div class="bar"><div class="bar-fill" data-level="75"></div></div></div>
+      <div class="bar-row"><span>JavaScript</span><div class="bar"><div class="bar-fill" data-level="80"></div></div></div>
+    </div>
+
+    <div class="skill-block glass reveal">
+      <h3><i class="fa-solid fa-layer-group"></i> Web Technologies</h3>
+      <div class="bar-row"><span>HTML5</span><div class="bar"><div class="bar-fill" data-level="90"></div></div></div>
+      <div class="bar-row"><span>CSS3</span><div class="bar"><div class="bar-fill" data-level="85"></div></div></div>
+      <div class="bar-row"><span>JavaScript</span><div class="bar"><div class="bar-fill" data-level="80"></div></div></div>
+
+      <h3 class="mt"><i class="fa-solid fa-database"></i> Database</h3>
+      <div class="bar-row"><span>MySQL</span><div class="bar"><div class="bar-fill" data-level="75"></div></div></div>
+    </div>
+
+    <div class="skill-block glass reveal">
+      <h3><i class="fa-solid fa-toolbox"></i> Tools & Platforms</h3>
+      <div class="pill-grid">
+        <span class="pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+        <span class="pill"><i class="fa-brands fa-github"></i> GitHub</span>
+        <span class="pill"><i class="fa-solid fa-code"></i> VS Code</span>
+        <span class="pill"><i class="fa-solid fa-fire"></i> Firebase</span>
+        <span class="pill"><i class="fa-solid fa-book"></i> Jupyter</span>
+      </div>
+      <h3 class="mt"><i class="fa-solid fa-graduation-cap"></i> Core Subjects</h3>
+      <div class="pill-grid">
+        <span class="pill">Data Structures</span>
+        <span class="pill">OOP</span>
+        <span class="pill">DBMS</span>
+        <span class="pill">Web Dev</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <span class="section-eyebrow reveal">04 · Projects</span>
+  <h2 class="section-title reveal">Things I've built</h2>
+
+  <div class="projects-grid">
+    <article class="project-card reveal">
+      <div class="project-glow"></div>
+      <div class="project-inner glass">
+        <div class="project-top">
+          <i class="fa-solid fa-calendar-days project-icon"></i>
+          <span class="project-tag">Full Stack</span>
+        </div>
+        <h3>Novex</h3>
+        <p>A centralized event discovery platform for college students — surfaces hackathons, workshops, and internships based on personal interests.</p>
+        <div class="project-stack">
+          <span class="pill sm">Web</span>
+          <span class="pill sm">Events</span>
+          <span class="pill sm">Students</span>
+        </div>
+        <a href="https://github.com/pranave2007/Novex" target="_blank" rel="noopener" class="btn btn-ghost sm">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-glow"></div>
+      <div class="project-inner glass">
+        <div class="project-top">
+          <i class="fa-solid fa-shapes project-icon"></i>
+          <span class="project-tag">Graphics</span>
+        </div>
+        <h3>2D Vector Graphics Project</h3>
+        <p>A graphics editor for drawing and manipulating 2D shapes, built to explore core computer graphics and programming concepts hands-on.</p>
+        <div class="project-stack">
+          <span class="pill sm">Graphics</span>
+          <span class="pill sm">Algorithms</span>
+        </div>
+        <a href="https://github.com/pranave2007/2d-vector-project" target="_blank" rel="noopener" class="btn btn-ghost sm">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="section" id="achievements">
+  <span class="section-eyebrow reveal">05 · Achievements</span>
+  <h2 class="section-title reveal">Milestones so far</h2>
+
+  <div class="achieve-grid">
+    <div class="achieve-card glass reveal">
+      <i class="fa-solid fa-certificate"></i>
+      <p>Passed Class 12 (CBSE)</p>
+    </div>
+    <div class="achieve-card glass reveal">
+      <i class="fa-solid fa-layer-group"></i>
+      <p>Built multiple software & web development projects</p>
+    </div>
+    <div class="achieve-card glass reveal">
+      <i class="fa-solid fa-people-group"></i>
+      <p>Developed a full-stack student event platform — Novex</p>
+    </div>
+    <div class="achieve-card glass reveal">
+      <i class="fa-solid fa-code-branch"></i>
+      <p>Active GitHub profile with continuous learning</p>
+    </div>
+  </div>
+
+  <!-- GITHUB STATS -->
+  <div class="github-stats reveal">
+    <h3><i class="fa-brands fa-github"></i> GitHub Activity</h3>
+    <div class="stats-cards" id="githubStats">
+      <div class="stat-card glass"><span class="stat-value" id="statRepos">—</span><span class="stat-label">Public Repos</span></div>
+      <div class="stat-card glass"><span class="stat-value" id="statFollowers">—</span><span class="stat-label">Followers</span></div>
+      <div class="stat-card glass"><span class="stat-value" id="statFollowing">—</span><span class="stat-label">Following</span></div>
+    </div>
+    <img class="stats-img" src="https://github-readme-stats.vercel.app/api?username=pranave2007&show_icons=true&theme=transparent&hide_border=true&title_color=4A5D44&icon_color=38BDF8&text_color=5E695A" alt="GitHub stats for pranave2007" loading="lazy" />
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <span class="section-eyebrow reveal">06 · Contact</span>
+  <h2 class="section-title reveal">Let's build something</h2>
+
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <p>Open to internships, collaborations, and anything that involves writing code and learning something new. Reach out — I reply fast.</p>
+      <div class="contact-links">
+        <a href="https://github.com/pranave2007" target="_blank" rel="noopener" class="contact-link">
+          <i class="fa-brands fa-github"></i>
+          <div><span>GitHub</span><small>github.com/pranave2007</small></div>
+        </a>
+        <a href="https://www.linkedin.com/in/pranav-ethapay-66031b3a1/" target="_blank" rel="noopener" class="contact-link">
+          <i class="fa-brands fa-linkedin"></i>
+          <div><span>LinkedIn</span><small>pranav-ethapay</small></div>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form glass reveal" id="contactForm">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Say hello..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed & built by Pranav Ethapay</p>
+  <div class="footer-socials">
+    <a href="https://github.com/pranave2007" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/pranav-ethapay-66031b3a1/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+  <p class="footer-year">&copy; <span id="year"></span> All rights reserved.</p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
